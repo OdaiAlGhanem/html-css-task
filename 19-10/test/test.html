@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test 1 Group 5</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* A CSS selector selects the HTML element(s) you want to style. /
+          / The CSS class Selector 
+
+           The class selector
+ 
+          selects HTML elements with a specific class attribute. 
+            To select elements with a specific class, write a period (.) character, followed by the class name. /
+
+           .selectors {
+
+           color:blue;
+           font-size: 30px;
+
+           font-weight: bold;
+            text-align: center; 
+            }
+
+           / Descendant Selector
+            The descendant selector matches all elements that are descendants of a specified element. */
+        .selectors {
+
+            color: rgb(255, 248, 248);
+            font-size: 50px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .selectors span{
+            color: yellow;
+        }
+        
+        --------------------------------------------------------
+        /* Universal Selector: Selects all elements. Optionally,
+     it may be restricted to a specific namespace or to all namespaces */ 
+     #head
+     {
+       font-style: italic;
+     }
+
+     /* Elements Selector: Select element by using tag name. */
+
+       H1 {
+        text-align: center;
+        color: rgb(110, 158, 110);}
+
+     /*Id Selector: Selects an element based on the value of its id attribute.
+    There should be only one element with a given ID in a document */
+
+    #head{
+     text-align: center;
+     color: rgb(159, 169, 199);}
+
+     .internal{
+        color: green;
+       }
+    </style>
+
+</head>
+
+<body>
+    <!--
+
+
+    -->
+    <div class="h1">
+        <div>
+            <h1>Group 5 project</h1>
+        </div>
+    </div>
+    <!--
+        color
+
+    -->
+    <div>
+        <ul class="list">
+
+            <li style="color: chartreuse; ">ODAI</li>
+            <!--RGB Value
+                In CSS, a color can be specified as an RGB value, using this formula:
+
+                 rgb(red, green, blue)
+
+                 Each parameter (red, green, and blue) defines the intensity of the color between 0 and 255.
+
+                 For example, rgb(255, 0, 0) is displayed as red, because red is set to its highest value (255) and the others are set to 0.
+
+                  To display black, set all color parameters to 0, like this: rgb(0, 0, 0).
+
+                  To display white, set all color parameters to 255, like this: rgb(255, 255, 255).
+                -->
+            <li style="color: rgb(127,255,0)">QAIS</li>
+
+            <!--HSL Value
+             In CSS, a color can be specified using hue, saturation, and lightness (HSL) in the form:
+
+             hsl(hue, saturation, lightness)
+
+             Hue is a degree on the color wheel from 0 to 360. 0 is red, 120 is green, and 240 is blue.
+
+             Saturation is a percentage value. 0% means a shade of gray, and 100% is the full color.
+
+             Lightness is also a percentage. 0% is black, 50% is neither light or dark, 100% is white
+            -->
+            <li style="color: hsl(90, 100%, 50%)">MOSA'AB</li>
+
+            <!--HEX Value
+                In CSS, a color can be specified using a hexadecimal value in the form:
+
+                #rrggbb
+
+                Where rr (red), gg (green) and bb (blue) are hexadecimal values between 00 and ff (same as decimal 0-255).
+
+                For example, #ff0000 is displayed as red, because red is set to its highest value (ff) and the others are set to the lowest value (00).
+
+                 To display black, set all values to 00, like this: #000000.
+
+                 To display white, set all values to ff, like this: #ffffff.  
+                -->
+            <li style="color: #7FFF00">NSREEN</li>
+
+            <li style="color: #7FFF00">NOURAN</li>
+        </ul>
+    </div>
+    <div id="nsreen">
+        <!--
+        <audio>
+
+            what :
+             The <audio> tag contains one or more <source> tags with different audio sources. The browser will choose the first source it supports.
+            
+            The text between the <audio> and </audio> tags will only be displayed in browsers that do not support the <audio> element.
+            
+            There are three supported audio formats in HTML: MP3, WAV, and OGG.
+            { attribute loop ( Specifies that the audio will start over again, every time it is finished ) }
+            { attribute src Specifies the URL of the audio file }
+            why :
+            The <audio> tag is used to embed sound content in a document, such as music or other audio streams.
+            
+            How :
+            -->
+        <h1>The audio element</h1>
+
+        <p> Click on the play button to play a sound: </p>
+
+        <audio controls>
+            <source src="mixkit-little-birds-singing-in-the-trees-17.wav" type="audio/mpeg">
+        </audio>
+
+        <!--
+             <iframe>
+            
+            what:
+            The <iframe> tag specifies an inline frame.
+              { attribute src ( Specifies the address of the document to embed in the <iframe> ) } 
+            
+                why:
+                An inline frame is used to embed another document within the current HTML document.
+                
+                Hwo:
+                -->
+        <h1>The iframe element</h1>
+
+        <iframe src="https://www.wikipedia.org/" title="wikipedia"">
+            </iframe>
+    </div>
+    <div class="selectors">
+
+        <h1>selectors</h1>
+        <h2>class</h2>
+        <p >we select this class by using dot because we want to change the style</p>
+    <hr>
+    <span>
+        <h2>Decendant</h2>
+        in this example we will select span elements inside div elements:
+    </span>
+    
+    </div>
+    <hr>
+    <div>
+        <h1> Hello Everyone</h1>
+    <h1> How are you? </h1>
+
+    <h2 id="head"> Fine, What about you?</h2>
+    </div>
+    <div>
+        <!-- Body -->
+   <!-- An inline CSS is used to apply a unique style to a single HTML element. -->
+   <!-- An inline CSS uses the style attribute of an HTML element. -->
+   <h2>inline</h2>
+   <h3 style="color:blue;">styling h1 using inline style attribute</h3>
+   <br><br>
+
+   <!-- An internal CSS is used to define a style for a single HTML page. -->
+   <!-- An internal CSS is defined in the <head> section of an HTML page, within a <style> element. -->
+    <h2>internal</h2>
+   <h3 class="internal">styling h1 using internal Css</h3>
+   <h3 class="internal">styling h1 using internal Css</h3>
+   <h3 class="internal">styling h1 using internal Css</h3>
+   <h3 class="internal">styling h1 using internal Css</h3>
+   <h3 class="internal">styling h1 using internal Css</h3>
+
+   <br><br>
+   <h2>external</h2>
+   <!-- An external style sheet is used to define the style for many HTML pages. -->
+   <!-- To use an external style sheet, add a link to it in the <head> section of each HTML page: -->
+   <h3 class="external">styling h1 using external css</h3>
+   <h3 class="external">styling h1 using external css</h3>
+   <h3 class="external">styling h1 using external css</h3>
+   <h3 class="external">styling h1 using external css</h3>
+   <h3 class="external">styling h1 using external css</h3>
+
+
+   <!-- body -->
+    </div>
+
+    
+
+</body>
+</html>
