@@ -18,10 +18,14 @@ th, td {
 .input-align {
     display: inline-block;
     width: 100px;
+    margin-bottom: 10px;
 }
 button
 {
     padding: 10px 10px;
-    margin:  50px 70px;
+    margin:  10px 105px;
 
+}
+span{
+    color: blue;
 }

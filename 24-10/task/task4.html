@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4 Grid</title>
+    <style>
+            display: grid;
+            height: 500px;
+
+        }
+
+         {
+            background-color: black;
+
+        }
+
+        .item2 {
+            background-color: orange;
+
+        }
+
+        .item3 {
+            background-color: green;
+        }
+
+        .item4 {
+            background-color: blue;
+        }
+
+        .grid-container {
+ 
+            display: grid;
+            grid-template-columns: 60% 40%;
+            grid-template-rows: 10% 60% 30%;
+            height: 80vh;
+            gap: 15px;
+        }
+
+        .item1 {
+            background-color: black;
+            grid-column: 1/ span 2;
+        }
+
+        .item2 {
+            background-color: orange;
+        }
+
+        .item3{
+            background-color: green;
+        }
+
+        .item4 {
+            background-color: blue;
+            grid-column: 1 / span 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="item1"></div>
+        <div class="item2"></div>
+        <div class="item3"></div>
+        <div class="item4"></div>
+    </div>
+
+
+</body>
+
+</html>
