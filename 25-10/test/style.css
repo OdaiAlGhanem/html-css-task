@@ -1,0 +1,42 @@
+.maindiv
+ {
+   
+    margin: 0px auto;
+    
+    width: 97vw;
+    
+
+}
+
+.maindiv div 
+{
+    border: 2px solid black;
+    height: 150px;
+    width: 23%;
+    display: inline-block;
+    
+    
+
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+    .maindiv {
+      
+    }
+    .maindiv div {
+        width: 48%;
+    }
+   
+
+}
+@media screen and (min-device-width: 0px) and (max-device-width: 480px) {
+    .maindiv {
+       
+    }
+    .maindiv div {
+       width: 90%;
+
+    }
+   
+    
+}

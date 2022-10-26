@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,48 +8,88 @@
     <title>task 5</title>
     <style>
         body {
-    background-color: rgb(130, 46, 60);
-}
+            background-color: rgb(130, 46, 60);
+        }
+
+        .grey {
+            display: inline-block;
+            width: 300px;
+            height: fit-content;
+            background-color: white;
+            color: black;
+            border: black solid 2px;
+            margin: 20px;
+        }
+
+        .scrollitem{
+            overflow: scroll;
+            overflow-x: hidden;
+            height: 50px;
+            border: 2px solid black;
+            margin: 9px 5px 9px 5px;
+        }
+
+        sth {
+            overflow-y: scroll;
+            height: 50px;
+            width: 100%;
+            margin: 15px;
+        }
+
+        @media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+
+            textarea {
+                width: 340px;
+                height: 175px;
+            }
 
 
-.grey{
-    display: inline-block;
-    width: 300px;
-    height: fit-content;
-    background-color: white;
-    color: black;
-    border: black solid 2px ;
-    margin: 20px ;
-    
-}
-
-sth {
-    overflow-y: scroll;
-    height: 50px;
-    width: 100%;
-    margin: 15px;
-}
+        }
     </style>
 </head>
+
 <body>
     <h1>Floating Articles</h1>
     <div id="outer1">
-        <p class="grey">Donec eu tincidunt est. Integer tincidunt, turpis id imperdiet consequat, ante massa venenatis nibh, ac dignissim velit quam ut tortor. Donec at est nec nibh scelerisque auctor ac eu diam. Morbi tristique elementum leo, non tristique sapien hendrerit nec. Morbi ornare, nisi ut sagittis ullamcorper, eros lorem commodo nisl, </p>
-        <p class="grey">Donec eu tincidunt est. Integer tincidunt, turpis id imperdiet consequat, ante massa venenatis nibh, ac dignissim velit quam ut tortor. Donec at est nec nibh scelerisque auctor ac eu diam. Morbi tristique elementum leo, non tristique sapien hendrerit nec. Morbi ornare, nisi ut sagittis ullamcorper, eros lorem commodo nisl, </p>
+        <p class="grey">Donec eu tincidunt est. Integer tincidunt, turpis id imperdiet consequat, ante massa venenatis
+            nibh, ac dignissim velit quam ut tortor. Donec at est nec nibh scelerisque auctor ac eu diam. Morbi
+            tristique elementum leo, non tristique sapien hendrerit nec. Morbi ornare, nisi ut sagittis ullamcorper,
+            eros lorem commodo nisl, </p>
+        <p class="grey">Donec eu tincidunt est. Integer tincidunt, turpis id imperdiet consequat, ante massa venenatis
+            nibh, ac dignissim velit quam ut tortor. Donec at est nec nibh scelerisque auctor ac eu diam. Morbi
+            tristique elementum leo, non tristique sapien hendrerit nec. Morbi ornare, nisi ut sagittis ullamcorper,
+            eros lorem commodo nisl, </p>
         <p class="grey">
-            Donec sollicitudin ante quis massa aliquet congue. Maecenas lacus turpis, porttitor interdum fringilla a, porttitor a orci. Duis venenatis, mauris sit amet tempor porta, arcu ex elementum ante, id fermentum diam dui id nulla. Phasellus mattis orci non turpis molestie consequat. Nullam congue justo in neque sollicitudin, non cursus orci viverra. 
+            Donec sollicitudin ante quis massa aliquet congue. Maecenas lacus turpis, porttitor interdum fringilla a,
+            porttitor a orci. Duis venenatis, mauris sit amet tempor porta, arcu ex elementum ante, id fermentum diam
+            dui id nulla. Phasellus mattis orci non turpis molestie consequat. Nullam congue justo in neque
+            sollicitudin, non cursus orci viverra.
         </p>
     </div>
 
-    <textarea name="sth" id="sth"  cols="200">Donec sollicitudin ante quis massa aliquet congue. Maecenas lacus turpis, porttitor interdum fringilla a, porttitor a orci. Duis venenatis, mauris sit amet tempor porta, arcu ex elementum ante, id fermentum diam dui id nulla. Phasellus mattis orci non turpis molestie consequat. Nullam congue justo in neque sollicitudin, non cursus orci viverra.Donec sollicitudin ante quis massa aliquet congue. Maecenas lacus turpis, porttitor interdum fringilla a, porttitor a orci. Duis venenatis, mauris sit amet tempor porta, arcu ex elementum ante, id fermentum diam dui id nulla. Phasellus mattis orci non turpis molestie consequat. Nullam congue justo in neque sollicitudin, non cursus orci viverra.</textarea>
+    <div class="scrollitem">    Donec sollicitudin ante quis massa aliquet congue. Maecenas lacus turpis, porttitor interdum fringilla a, porttitor
+        a orci. Duis venenatis, mauris sit amet tempor porta, arcu ex elementum ante, id fermentum diam dui id nulla.
+        Phasellus mattis orci non turpis molestie consequat. Nullam congue justo in neque sollicitudin, non cursus orci
+        viverra.Donec sollicitudin ante quis massa aliquet congue. Maecenas lacus turpis, porttitor interdum fringilla a,
+        porttitor a orci. Duis venenatis, mauris sit amet tempor porta, arcu ex elementum ante, id fermentum diam dui id
+        nulla. Phasellus mattis orci non turpis molestie consequat. Nullam congue justo in neque sollicitudin, non cursus
+        orci viverra.</div>
+
 
     <div>
         <p class="grey">
-            Donec sollicitudin ante quis massa aliquet congue. Maecenas lacus turpis, porttitor interdum fringilla a, porttitor a orci. Duis venenatis, mauris sit amet tempor porta, arcu ex elementum ante, id fermentum diam dui id nulla. Phasellus mattis orci non turpis molestie consequat. Nullam congue justo in neque sollicitudin, non cursus orci viverra.
+            Donec sollicitudin ante quis massa aliquet congue. Maecenas lacus turpis, porttitor interdum fringilla a,
+            porttitor a orci. Duis venenatis, mauris sit amet tempor porta, arcu ex elementum ante, id fermentum diam
+            dui id nulla. Phasellus mattis orci non turpis molestie consequat. Nullam congue justo in neque
+            sollicitudin, non cursus orci viverra.
         </p>
         <p class="grey">
-            Donec eu tincidunt est. Integer tincidunt, turpis id imperdiet consequat, ante massa venenatis nibh, ac dignissim velit quam ut tortor. Donec at est nec nibh scelerisque auctor ac eu diam. Morbi tristique elementum leo, non tristique sapien hendrerit nec. Morbi ornare, nisi ut sagittis ullamcorper, eros lorem commodo nisl,
+            Donec eu tincidunt est. Integer tincidunt, turpis id imperdiet consequat, ante massa venenatis nibh, ac
+            dignissim velit quam ut tortor. Donec at est nec nibh scelerisque auctor ac eu diam. Morbi tristique
+            elementum leo, non tristique sapien hendrerit nec. Morbi ornare, nisi ut sagittis ullamcorper, eros lorem
+            commodo nisl,
         </p>
     </div>
 </body>
+
 </html>

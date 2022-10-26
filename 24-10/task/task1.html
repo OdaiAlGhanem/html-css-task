@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,23 +10,52 @@
         .Flex-container {
             display: flex;
             height: 800px;
-            background-color: #f39f21;
+            border: 7px solid #f39f21;
         }
 
         .Flex-item {
             width: 100%;
-            margin: 5px 0px ;
             text-align: center;
-            line-height: 75px;
             color: aliceblue;
             font-size: 50px;
         }
+
+        @media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+            .Flex-container {
+                display: grid;
+                grid-template-columns: auto auto;
+            }
+            .Flex-item{
+                width: 100%;
+            text-align: center;
+            color: aliceblue;
+            font-size: 50px;
+            }
+
+        }
+
+        @media screen and (min-device-width: 0px) and (max-device-width: 480px) {
+            .Flex-container {
+                display: grid;
+                grid-template-columns: auto;
+                
+            }
+            .Flex-item{
+                width: 100%;
+                
+            text-align: center;
+            color: aliceblue;
+            font-size: 50px;
+            }
+
+        }
     </style>
 </head>
+
 <body>
     <div class="Flex-container">
 
-        <div style="background-color: green; margin-left: 5px;" class="Flex-item">1</div>
+        <div style="background-color: green; " class="Flex-item">1</div>
         <div style="background-color: yellow ;" class="Flex-item">2</div>
         <div style="background-color: blueviolet ;" class="Flex-item">3</div>
         <div style="background-color: gray;" class="Flex-item">4</div>
@@ -33,9 +63,9 @@
         <div style="background-color: orange;" class="Flex-item">6</div>
         <div style="background-color: palevioletred ;" class="Flex-item">7</div>
         <div style="background-color: red ;" class="Flex-item">8</div>
-        <div style="background-color: darkred; margin-right :5px ;" class="Flex-item">9</div>
-        
+        <div style="background-color: darkred; " class="Flex-item">9</div>
+
     </div>
-    
+
 </body>
 </htmlhe

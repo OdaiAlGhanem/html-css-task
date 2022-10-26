@@ -9,17 +9,40 @@
     <style>
         .grid-container {
             display: grid;
-            height: 800px;
             grid-template-columns: auto auto auto auto;
-            background-color: #c28916;
-            padding: 10px;
+            border: 7px solid orange;
+            grid-template-rows: auto auto auto;
+
         }
+
         .grid-item {
-            background-color: rgba(255, 255, 255, 0.8);
+
+            height: 100px;
             color: aliceblue;
-            padding: 60px 0px;
             font-size: 70px;
             text-align: center;
+        }
+
+        @media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+            .grid-container {
+                display: grid;
+                grid-template-columns: auto auto ;
+            }
+
+        }
+
+        @media screen and (min-device-width: 0px) and (max-device-width: 480px) {
+            .grid-container {
+                display: grid;
+                grid-template-columns: auto;
+                
+             
+            }
+            .grid-item
+            {
+               
+            }
+
         }
     </style>
 </head>
